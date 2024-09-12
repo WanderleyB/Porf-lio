@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-white: #ffffff;
+    --color-dark1: #272727;
+    --color-dark2: #2d2d2d;
+    --color-dark3: #414141;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #343434;
+    --color-cyan:hsl(187, 100%, 50%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-dark1);
+    color: var(--color-white);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    z-index: 1000;
+    }
+.header,
+.navigation_header{
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    background-color: var(--color-dark2);
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 5em;
+    box-shadow: 1px 1px 4px var(--color-dark4);
+}
+.navigation_header{
+    gap: 3em;
+    z-index: 2;
+}
+
+.navigation_header a{
+    text-decoration: none;
+    color: var(--color-cyan);
+    transition: 1s;
+    font-weight: bold;
+}
+
+.navigation_header a:hover{
+    color: var(--color-white);
+}
+
+.active{
+    background: var(--color-dark3);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img_logo_header{
+    width: 45px;
+    border-radius: 10px;
+    padding-left: 7em;
+}
+
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation_header{
+        position: fixed;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-dark5);
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+}
+
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -10vw;}
+}
+
+.first_landing{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 13%;
+    margin-left: 7em;
+}
+
+.container{
+    transition: 1s;
+}
+
+.small_txt{
+    color: var(--color-cyan);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.large_txt,.medium_txt{
+    margin-bottom: 3px;
+    font-size: 32px;
+}
+
+span {
+    max-width: 480px;
+    margin: 60px auto;
+    font-family: "Poppins", sans-serif;
+    color: var(--color-cyan)
+  }
+
+span:after {
+    content: '|';
+    opacity: 1;
+    animation: pisca .7s infinite;
+  }
+  @keyframes pisca {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+  }
+
+.botao_link_in,.botao_link_insta,.botao_link_git{
+    display: flex;
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 2px 0;
+    width: 120px;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 1s;
+    box-shadow: 7px 7px 7px var(--color-dark4);
+}
+
+.botao_link_insta,.botao_link_git{
+    margin-left: 1.7em;
+}
+
+.botao_link_insta:hover,.botao_link_in:hover,.botao_link_git:hover{
+    color: var(--color-cyan);
+}
+
+.button_img {
+    width: 32px; 
+    height: 32px;
+    vertical-align: middle;
+
+}
+
+.main_logo{
+    width: 500px;
+}
+
+.second_landing{
+    margin-top: 17vw;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 70px;
+}
+
+.principal_conteudo_sobre p {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.02rem;
+    margin-top: 2em;
+    margin-right: 7em;
+}
+
+.small_txt_sobre{
+    color: var(--color-cyan);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.large_txt_sobre{
+    margin-top: 0.5em;
+}
+
+.foto_eu{
+    box-shadow: 15px 15px 15px 15px var(--color-dark4);
+    border-radius: 10px;
+    display: block;
+    max-width: 100%;
+}
+
+main {
+    display: block; 
+}
+
+.second_landing,.terceira_landing,.quarta.landing{
+    margin-bottom: 17vw;
+}
+
+.terceira_landing,
+.quarta_landing{
+    margin-left: 19em;
+}
+
+.small_txt_exp,
+.small_txt_projetos{
+    color: var(--color-cyan);
+    font-size: 15px;
+}
+
+.large_txt_exp{
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.txt_exp{
+    font-family: "Montserrat", sans-serif;
+    line-height: 2;
+    letter-spacing: 0.02rem;
+}
+
+.card-content{
+    padding: 15px;
+    width: 200px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px var(--color-dark4);
+    margin-top: 10px;
+    transition: 1s;
+}
+
+.verified-color{
+    display: flex;
+    display: inline-block;
+    width: 23px; 
+    height: 23px;
+}
+
+.card-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+}
+
+.pop-it-card {
+    width: 220px;
+}
+
+.pop-it-card:hover {
+    transform: scale(1.05);
+}
+
+.pop-it-card:active {
+    transform: scale(0.95);
+}
+
+.large_txt_projetos{
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.proje-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-dark1);
+    border: solid var(--color-white);   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--color-dark4);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    margin-top: 35px;
+}
+
+.proje-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px var(--color-dark4)
+}
+
+.proje-card-image {
+    width: 100%;  
+    height: auto;
+    object-fit: cover;  
+}
+
+.proje-card-content {
+    padding: 15px;
+}
+
+.proje-card-title {
+    color: var(--color-white);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.proje-card-text {
+    font-size: 1rem;
+    color: var(--color-white);
+}
+
+.proje-card-subtitle {
+    margin-right: 9vw;
+    font-size: 0.9rem;
+    color: var(--color-white)
+}
+
+.proje-app-icon--open {
+    width: 24px;
+    height: 24px;
+    color: var(--color-white);
+}
+
+.scroll {
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: opacity 2s ease-out, transform 2s ease-out; 
+}
+
+.scrolled-in {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+.proje-card-container{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}

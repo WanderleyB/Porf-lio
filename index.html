@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderley Bigosinski </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="assents/logo.png" alt="Logo WB" class="img_logo_header">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#experiencias">Experiências</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </div>
+    <div tabindex="0" class="container" onfocus="closeSidebar()" id="container">
+        <main class="first_landing" id="home">
+            <div class="container">
+                <h2 class="small_txt">Olá, o meu nome é</h2>
+                <h1 class="large_txt">Wanderley Bigosinski</h1>
+                <h2 class="medium_txt">Desenvolvedor <span>Front-End</span></h2>
+                <a class="botao_link_in" href="https://www.linkedin.com/in/wanderley-bigosinski/" target="_blank">
+                    <img src="assents/in.png" alt="Linkedin" class="button_img">Linkedin
+                </a>
+                <a class="botao_link_git" href="https://github.com/WanderleyB" target="_blank">
+                    <img src="assents/git.png" alt="GitHub" class="button_img"> GitHub
+                </a>
+                <a class="botao_link_insta" href="https://www.instagram.com/decobigosinski/" target="_blank">
+                    <img src="assents/insta.png" alt="Instagram" class="button_img">Instagram
+                </a> 
+            </div>
+            <img src="assents/logo.png" alt="Logo WB" class="main_logo" id="logo">
+        </main>
+        <main class="second_landing" id="sobre">
+            <div class="principal_conteudo_sobre">
+                <h2 class="small_txt_sobre">Um pouco sobre mim</h2>
+                <h1 class="large_txt_sobre">Sobre</h1>
+                <p>Sou Wanderley Bigosinski, estudante de Desenvolvimento Web com foco no Front-end !<br>Desde o começo de 2024, tenho me dedicado ao estudo e prática de tecnologias como HTML, CSS e JavaScript, <br> sempre buscando aprimorar minhas habilidades e construir interfaces modernas e funcionais.</p>
+                <p>No meu portfólio, você encontrará projetos que demonstram minhas habilidades em desenvolver componentes <br>reutilizáveis, otimizar o desempenho e garantir uma experiência de usuário.<br>Estou constantemente aprendendo e explorando novas tecnologias para evoluir como desenvolvedor e trazer inovação<br> para os projetos em que trabalho. </p>
+                <p>Meu foco é aprender novas coisas e aprimorar ainda mais as habilidades que possuo<br>para o desenvolvimento e eficiência de novos sistemas e na melhoria de existentes para uma melhor experiência do usuário.</p>
+            </div> 
+            <img src="assents/eu.png" alt="Uma foto do Wanderley Bigosinski" class="foto_eu">
+        </main>
+        <main class="terceira_landing" id="experiencias">
+            <div class="principal_conteudo_exp">
+                <h2 class="small_txt_exp">Minhas experiências</h2>
+                <p class="large_txt_exp">Linguagens e tecnologias</p>
+                <p class="txt_exp">Aqui estão as linguagens e tecnologias que eu tenho contato.</p>
+
+                <div class="cards-container">
+    <div class="card scroll pop-it-card">
+        <div class="card-content">
+            <div class="card-content--title" style="display: flex; align-items: center; justify-content: flex-start;">
+                <img class="verified-color" height="24" width="24" alt="Verificado" src="assents/verificado.png">
+                &nbsp; &nbsp;
+                <h6 class="card-title">HTML</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card scroll pop-it-card">
+    <div class="card-content">
+        <div class="card-content--title" style="display: flex; align-items: center; justify-content: flex-start;">
+            <img class="verified-color" height="24" width="24" alt="Verificado" src="assents/verificado.png">
+            &nbsp; &nbsp;
+            <h6 class="card-title">CSS</h6>
+        </div>
+    </div>
+</div>
+
+<div class="card scroll pop-it-card">
+    <div class="card-content">
+        <div class="card-content--title" style="display: flex; align-items: center; justify-content: flex-start;">
+            <img class="verified-color" height="24" width="24" alt="Verificado" src="assents/verificado.png">
+            &nbsp; &nbsp;
+            <h6 class="card-title">JavaScript</h6>
+        </div>
+    </div>
+</div>
+
+<div class="card scroll pop-it-card">
+    <div class="card-content">
+        <div class="card-content--title" style="display: flex; align-items: center; justify-content: flex-start;">
+            <img class="verified-color" height="24" width="24" alt="Verificado" src="assents/verificado.png">
+            &nbsp; &nbsp;
+            <h6 class="card-title">React</h6>
+        </div>
+    </div>
+</div>
+        </div>
+        </main>
+            <main class="quarta_landing" id="projetos">
+                <div class="principal_conteudo_projetos">
+                    <h2 class="small_txt_projetos">Apps que desenvolvi</h2>
+                    <p class="large_txt_projetos">Projetos<p>
+                    <div class="proje-card scroll scrolled-in">
+    <img src="assents/AluraFlix.png" alt="AluraFlix" class="proje-card-image">
+    <div class="proje-card-content">
+        <div class="proje-card-content--title">
+            <h4 class="proje-card-title">Alura+</h4>
+            <div class="proje-app-icon">
+            </div>
+        </div>
+        <p class="proje-card-text mt-3">Alura+ foi um projeto que eu fiz enquanto estava estudando HTML e CSS. Feito no curso da ALURA</p>
+        <div class="proje-card-container">
+        <p class="proje-card-subtitle">HTML  CSS</p>
+        <a href="https://lnkd.in/dX345y4f" alt="Abrir" target="_blank" rel="noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="proje-app-icon--open">
+                <path class="proje-path" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline class="proje-path" points="15 3 21 3 21 9"></polyline>
+                <line class="proje-path" x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+        </a>
+        </div>
+    </div>
+</div>
+        </main>
+        <main class="fifth_landing" id="contato">
+            <h2>Contato</h2>
+        </main>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
