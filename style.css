@@ -19,6 +19,26 @@ body{
     color: var(--color-white);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#home{
+    scroll-margin-top: 500px;
+}
+
+#sobre{
+    scroll-margin-top: 400px;
+}
+
+#experiencias{
+    scroll-margin-top: 370px;
+}
+
+#projetos{
+    scroll-margin-top: 370px;
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -262,11 +282,6 @@ main {
     font-size: 13px;
 }
 
-.cards-container {
-    display: flex;
-    gap: 20px;
-}
-
 .pop-it-card {
     width: 220px;
 }
@@ -287,6 +302,12 @@ main {
     margin-top: 15px;
 }
 
+.container-cards {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
 .proje-card {
     display: flex;
     flex-direction: column;
@@ -299,6 +320,7 @@ main {
     width: 300px;
     margin-top: 35px;
 }
+
 
 .proje-card:hover {
     transform: translateY(-10px);
@@ -332,6 +354,10 @@ main {
     color: var(--color-white)
 }
 
+.proje-card-subtitle-helva{
+    margin-right: 4vw;
+}
+
 .proje-app-icon--open {
     width: 24px;
     height: 24px;
@@ -353,4 +379,153 @@ main {
     display: flex;
     align-items: center;
     margin-top: 50px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 17vh;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main_logo {
+        width: 0px;
+    }
+
+    .first_landing {
+        margin-top: 33vh;
+    }
+
+    .second_landing {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .foto_eu {
+        max-width: 60%;
+        margin-top: 50vw;
+        margin-left: 20%;
+        margin-bottom: 2rem;
+    }
+
+    .small_txt_sobre,.large_txt_sobre{
+        margin-right: 75px;
+    }
+    .principal_conteudo_sobre{
+        margin-left: 75px;
+    }
+    
+    .small_txt_exp {
+        margin-right: 300px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proje-card {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .cards-container {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .projects-container {
+        justify-content: space-around;
+    }
+
+    .proje-card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .projects-container {
+        justify-content: space-between;
+    }
+
+    .proje-card {
+        width: 300px;
+    }
 }
