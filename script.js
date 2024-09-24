@@ -54,27 +54,40 @@
     
 
 
-    // Função para observar os elementos com a classe 'scroll'
 document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll(".scroll"); // Seleciona todos os cards que têm a classe 'scroll'
+    const cards = document.querySelectorAll(".scroll"); 
 
-    // Opções do Intersection Observer
+    
     const options = {
-        threshold: 0.2 // Define que 20% do card deve estar visível antes de ativar a classe
+        threshold: 0.2 // 
     };
 
-    // Função callback do observer
+
     const observer = new IntersectionObserver(function (entries, observer) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('scrolled-in'); // Adiciona a classe 'scrolled-in' quando visível
-                observer.unobserve(entry.target); // Para de observar o card quando já estiver visível
+                entry.target.classList.add('scrolled-in'); 
+                observer.unobserve(entry.target); 
             }
         });
     }, options);
 
-    // Adiciona o observer para cada card
+    
     cards.forEach(card => {
         observer.observe(card);
+    });
+});
+
+document.querySelectorAll('.hotbar a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault(); 
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId); 
+
+        targetElement.scrollIntoView({
+            behavior: 'smooth', 
+            block: 'start' 
+        });
     });
 });
