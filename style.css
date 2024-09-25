@@ -459,7 +459,6 @@ main {
     font-size: 14px;
 }
 
-
 @media screen and (max-width: 768px) {
     .main_logo {
         width: 0px;
@@ -500,6 +499,27 @@ main {
     .proje-card {
         width: 90%;
     }
+    
+    .terceira_landing{
+        margin-left: 50px;
+    }
+
+    .quarta_landing{
+        margin-left: 50px;
+    }
+
+    .container-cards{
+        max-width: 400px;
+        margin-left: 150px;
+    }
+
+    .proje-card-subtitle{
+        margin-right: 230px;
+    }
+
+    .proje-card-subtitle-helva{
+        margin-right: 140px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -529,3 +549,4 @@ main {
         width: 300px;
     }
 }
+
