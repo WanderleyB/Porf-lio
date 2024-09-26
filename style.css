@@ -510,7 +510,7 @@ main {
 
     .container-cards{
         max-width: 400px;
-        margin-left: 150px;
+        margin-left: 50px;
     }
 
     .proje-card-subtitle{
@@ -549,4 +549,3 @@ main {
         width: 300px;
     }
 }
-
